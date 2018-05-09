@@ -1,0 +1,22 @@
+.we-use {
+    width: 100%;
+    padding-bottom: 30px;
+    background-color: $white;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include media-breakpoint-up(md)  {
+        background-image: url('assets/images/bg-we-use.jpg');
+    }
+}
+
+.we-use__wrap {
+    text-align: center;
+}
+
+.we-use___img {
+    max-width: 100%;
+    height: auto;
+}

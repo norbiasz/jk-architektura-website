@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('assets/icomoon/fonts/icomoon.eot?gxm3gr');
+  src:  url('assets/icomoon/fonts/icomoon.eot?gxm3gr#iefix') format('embedded-opentype'),
+    url('assets/icomoon/fonts/icomoon.ttf?gxm3gr') format('truetype'),
+    url('assets/icomoon/fonts/icomoon.woff?gxm3gr') format('woff'),
+    url('assets/icomoon/fonts/icomoon.svg?gxm3gr#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin icomoon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    @include icomoon;
+}
+
+.icon-chevron-left:before {
+  content: "\e908";
+}
+.icon-chevron-right:before {
+  content: "\e909";
+}
+.icon-arrow-up-alt2:before {
+  content: "\e90b";
+}
+.icon-arrow-down-alt2:before {
+  content: "\e90c";
+}
+.icon-mail:before {
+  content: "\e903";
+}
+.icon-mail2:before {
+  content: "\e912";
+}
+.icon-phone:before {
+  content: "\e902";
+}
+.icon-mobile:before {
+  content: "\e914";
+}
+.icon-no:before {
+  content: "\e906";
+}
+.icon-arrow-leftt:before {
+  content: "\e904";
+}
+.icon-arrow-right:before {
+  content: "\e901";
+}
+.icon-insert_comment:before {
+  content: "\e24c";
+}
+.icon-instagram2:before {
+  content: "\e905";
+}
+.icon-calendar:before {
+  content: "\e953";
+}
+.icon-phone2:before {
+  content: "\e942";
+}
+.icon-bubbles2:before {
+  content: "\e96d";
+}
+.icon-bubble2:before {
+  content: "\e96e";
+}
+.icon-users:before {
+  content: "\e972";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-linkedin:before {
+  content: "\eac9";
+}
+.icon-linkedin2:before {
+  content: "\eaca";
+}
+.icon-cart:before {
+  content: "\e93a";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-play:before {
+  content: "\e913";
+}
+.icon-search:before {
+  content: "\e986";
+}
+.icon-youtube:before {
+  content: "\ea9d";
+}
+.icon-twitter-square:before {
+  content: "\e900";
+}

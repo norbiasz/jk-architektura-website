@@ -1,0 +1,43 @@
+.title-section {
+    padding: 40px 0px;
+    text-align: center;
+    width: 100%;
+
+    @include media-breakpoint-up(md)  { // min-width: 768px
+        padding: 50px 0px;
+    }
+}
+.title-section__wrap {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 26px;
+
+    h1 {
+        font-size: 26px;
+        margin: 0px;
+        padding: 0px;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-size: 26px;
+        margin: 0px;
+        padding: 0px;
+        font-weight: bold;
+    }
+
+    h3 {
+        font-size: 26px;
+        margin: 0px;
+        padding: 0px;
+        font-weight: bold;
+    }
+}
+
+.title-section--white {
+    color: $white;
+}
+
+.title-section--black {
+    color: $black;
+}

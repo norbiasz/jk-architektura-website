@@ -1,0 +1,118 @@
+.button--center {
+    padding-bottom: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+.button--right {
+    padding-bottom: 50px;
+    text-align: right;
+    width: 100%;
+}
+
+.button {
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-weight: 400;
+    background-color: transparent;
+    padding: 15px 40px;
+    display: inline-block;
+    @include transition(all .4s);
+
+    &:hover{
+        text-decoration: none;
+        @include transition(all .4s);
+    }
+}
+
+.button--black {
+    color: $black;
+    border-top: 1px solid $brand-secondary;
+    border-left: 1px solid $brand-secondary;
+    border-right: 1px solid $brand-secondary;
+    border-bottom: 1px solid $brand-secondary;
+
+    background: {
+        image: linear-gradient(45deg,$brand-secondary 50%, transparent 50%);
+        position: 97%;
+        size: 250%;
+        color: $white;
+    }
+    
+    &:hover, &:focus {
+        background-position: 0;
+        text-decoration: none;
+        border-top: 1px solid $brand-secondary;
+        border-left: 1px solid $brand-secondary;
+        border-right: 1px solid $brand-secondary;
+        border-bottom: 1px solid $brand-secondary;
+        color: $brand-primary;
+    }
+}
+
+.button--white {
+    color: $white;
+    border-top: 1px solid $brand-primary;
+    border-left: 1px solid $brand-primary;
+    border-right: 1px solid $brand-primary;
+    border-bottom: 1px solid $brand-primary;
+   
+
+    background: {
+        image: linear-gradient(45deg,$brand-primary 50%, transparent 50%);
+        position: 97%;
+        size: 250%;
+        color: $black;
+    }
+    
+    &:hover, &:focus {
+        background-position: 0;
+        text-decoration: none;
+        border-top: 1px solid $brand-primary;
+        border-left: 1px solid $brand-primary;
+        border-right: 1px solid $brand-primary;
+        border-bottom: 1px solid $brand-primary;
+        color: $black;
+    }
+}
+
+.button--contact{
+    padding: 10px 30px;
+
+    background: {
+        size: 260%;
+    }
+}
+
+.button--offer {
+    margin-top: -60px;
+}
+
+
+.facebook {
+    position: absolute;
+    right: -20px;
+    bottom: -75%;
+    width: 60px;
+    background-color: $white;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    height: 35px;
+    border: 2px solid black;
+    @include display-flex;
+    @include align-items(center);
+    @include transition(all .4s);
+
+    &:hover {
+        right: -2px;
+        @include transition(all .4s);
+        text-decoration: none;
+    }
+}
+
+.facebook__icon {
+    margin-left: 13px;
+    color: $black;
+}
+

@@ -1,0 +1,26 @@
+{
+  "name": "jk-architektura",
+  "version": "1.0.0",
+  "dependencies": {
+    "autosize": "^4.0.0",
+    "bootstrap": "^4.0.0-beta.3",
+    "slick-carousel": "^1.7.1"
+  },
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-clean-css": "*",
+    "gulp-compass": "*",
+    "gulp-concat": "*",
+    "gulp-imagemin": "*",
+    "gulp-include": "*",
+    "gulp-insert": "*",
+    "gulp-notify": "*",
+    "gulp-rename": "*",
+    "gulp-uglify": "*",
+    "gulp-util": "*",
+    "gulp-watch": "*",
+    "sass-bem-constructor": "*",
+    "syncy": "*"
+  }
+}

@@ -1,0 +1,16 @@
+.home-about-us {
+    width: 100%;
+    min-height: 500px;
+    background-color: $white;
+    background-repeat: no-repeat;
+    background-position: center left;
+
+    @include media-breakpoint-up(md)  {
+        background-image: url('assets/images/home-about-us.png');
+    }
+}
+
+.home-about-us__content {
+    padding-bottom: 50px;
+}
+

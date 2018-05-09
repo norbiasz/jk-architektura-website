@@ -1,0 +1,143 @@
+.home-slider {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.home-slider__wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1 !important;
+}
+
+.home-slider__image {
+    width: 100%;
+    height: 100%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slick-track, .slick-list {
+    height: 100% !important;
+}
+
+.slick-wrapper {
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
+
+.home-slider__container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+
+@include media-breakpoint-down(sm) { // max-width: 767.98px
+    .home-slider {
+        // padding-top: 94px;
+        // height: 265px;
+    }
+
+    .slick-slide {
+        padding-bottom: 26%;
+        margin-top: 105px;
+    }
+
+}
+
+@include media-breakpoint-up(md)  { // min-width: 768px
+    .home-slider {
+        padding-top: 115px;
+        height: 100vh;
+    }
+
+    .home-slider__next-slide {
+        right: 0px;
+        width: 40px;
+        height: 40px;
+        z-index: 10;
+        background-color: $black;
+    }
+
+    .home-slider__prev-slide {
+        right: 50px;
+        width: 40px;
+        height: 40px;
+        z-index: 10;
+        background-color: $black;
+    }
+
+    .home-slider__prev-slide::before, 
+    .home-slider__next-slide::before {
+        font-family: 'icomoon';
+        font-size: 30px;
+        line-height: 1;
+        @include opacity(.8);
+        color: $white;
+        position: relative;
+        top: 5px;
+        left: 5px;
+    }
+    
+    .home-slider__prev-slide, 
+    .home-slider__next-slide {
+        position: absolute;
+        top: 82%;
+        z-index: 999;
+        border: 1px solid rgba(255, 255, 255, .7);
+    }
+
+    .home-slider__prev-slide:hover, 
+    .home-slider__next-slide:hover{
+        @include opacity(.8);
+        background-color: $black;
+    }
+
+    .home-slider__prev-slide::before {
+        content: "\e908";
+    }
+
+    .home-slider__next-slide::before {
+        content: "\e909";
+    }
+}
+
+@include media-breakpoint-up(lg)  { // min-width: 992px
+    .home-slider {
+      //  height: 490px
+    }
+}
+
+@include media-breakpoint-up(xl) { // min-width: 1200px
+    .home-slider {
+      //  height: 690px
+    }
+}
+
+@media (min-width: 1599px) { 
+    .home-slider {
+       // height: 720px
+    }
+}
+
+
+
+
+
+        
+        
+ 
+

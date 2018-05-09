@@ -1,0 +1,87 @@
+@include media-breakpoint-down(sm) {
+    .header__toggle-menu {
+        position: fixed;
+        top: 25px;
+        right: 15px;
+        margin-right: 0;
+        background: $brand-secondary;
+        text-transform: uppercase;
+        color: $brand-secondary;
+        padding: 20px 35px 20px 70px;
+        line-height: 1;
+        border-radius: 70px;
+        cursor: hand;
+        cursor: pointer;
+        z-index: 5000;
+        transition: all .4s ease-in-out;
+        border: 2px solid $white;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 0;
+            border-radius: 25%;
+            height: 50px;
+            width: 50px;   
+            padding: 0;     
+        }
+
+        body.admin-bar & {
+            top: 38px;
+        }
+    }
+
+    .header__toggle-icon {
+        position: absolute;
+        left: 8px;
+        top: 50%;
+        width: 30px;
+        height: 28px;
+        overflow: hidden;
+        margin-top: -11px;
+
+        .bar {
+            display: block;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: $white;
+            position: absolute;
+            @include transition(all .4s ease-in-out);
+            border-radius: 5px;
+
+            &.first {
+                top: 0;
+            }
+
+            &.middle {
+                top: 33%;
+            }
+
+            &.last {
+                top: 66%;
+            }
+        }    
+
+        .is-open & .bar {
+
+            &.first {
+                top: 32%;
+                @include rotate(-45deg);
+            }    
+
+            &.middle {
+                left: -100%;
+            }   
+
+            &.last {
+                top: 32%;
+                @include rotate(45deg);
+            }                 
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .header__toggle-menu {
+        display: none;
+    }
+}

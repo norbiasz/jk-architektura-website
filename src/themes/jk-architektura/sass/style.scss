@@ -1,0 +1,41 @@
+@import "compass/css3";
+@import "wp-header";
+@import 'bootstrap/bootstrap';
+
+@import "vars";
+@import "base64";
+@import "mixins";
+
+@import "icomoon";
+@import "lightbox2";
+
+@import "slick-carousel/slick/slick";
+@import "slick-carousel/slick/slick-theme";
+
+@import "partials/site-header";
+@import "partials/site-footer";
+@import "partials/toggle_menu";
+@import "partials/form";
+@import "partials/home-slider";
+@import "partials/home-about-us";
+@import "partials/titles";
+@import "partials/buttons";
+@import "partials/offer";
+@import "partials/gallery";
+@import "partials/we-use";
+@import "partials/contact";
+@import "partials/common-style";
+
+
+body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-family: $font-arial;
+    font-size: 20px;
+    color: $black;
+    
+    *:focus {
+        outline: none;
+    }
+}

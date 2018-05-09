@@ -1,0 +1,7 @@
+.sass-cache/
+.vagrant/
+db/
+public/
+node_modules/
+uploads/
+wpdistillery/config.yml
