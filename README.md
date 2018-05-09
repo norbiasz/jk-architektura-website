@@ -1,13 +1,13 @@
-# MY WORDPRESS THEME #
-__PSD to WordPress__
+# PSD to WordPresss  #
 
-* Live [JK](http://jk-architektura.pl/)
+__Live website [jk-architektura.pl](http://jk-architektura.pl/)__
 
 I used:
 
 - jQuery
 - GULP
 - SASS, Compass 
+- BEM
 - Bootsrap v4.0
 - RWD
 - ACF
