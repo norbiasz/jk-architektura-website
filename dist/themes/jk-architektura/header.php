@@ -4,7 +4,6 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=<?php bloginfo('charset'); ?>" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="description" content="<?php bloginfo('name'); ?> - <?php bloginfo('description'); ?>" />
 <meta name="google-site-verification" content="yclmnSkTMSQ-JdE8XZhKk3XR44No1dbQV5z_KWHQtxQ" />
 <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
 <link rel="alternate" type="text/xml" title="RSS .92" href="<?php bloginfo('rss_url'); ?>" />
@@ -12,6 +11,7 @@
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <title><?php bloginfo('name'); ?></title>
 <meta name="description" content="<?php bloginfo('description'); ?>" />
+<meta name="format-detection" content="telephone=no" />
 <?php wp_head(); ?>
 </head>
 

@@ -21,7 +21,7 @@
                     <?php _e("Telefon:", 'jk-architektura'); ?>
                 </div>
                 <div class="contact__data">
-                    <a href="tel:<?php echo $tel ?>"><?php echo $tel ?></a> 
+                    <a href="tel:<?php echo str_replace(' ','', $tel) ?>"><?php echo $tel ?></a> 
                 </div>
 
                 <div class="contact__title">

@@ -50,7 +50,7 @@ get_header(); ?>
                         foreach( $images as $key => $image ) :
                         if($key == 0) : 
                     ?>
-                        <div class="gallery-box__image"style="background-image: url(<?php echo $image['sizes']['medium_large']; ?>)">
+                        <div class="gallery-box__image" style="background-image: url(<?php echo $image['sizes']['medium_large']; ?>)">
                             <a class="gallery-box__hover" href="<?php echo $image['url']; ?>" data-lightbox="image-<?php echo $i; ?>" data-title="<?php echo $image['title']; ?>">
                                 <span class="gallery-box--outer"><span class="gallery-box--inner">
                                     <span class="icon-search gallery-box__icon"></span>
