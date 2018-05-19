@@ -90,10 +90,9 @@
 }
 
 
+.instagram,
 .facebook {
     position: absolute;
-    right: -20px;
-    bottom: -75%;
     width: 60px;
     background-color: $white;
     border-bottom-left-radius: 20px;
@@ -111,6 +110,17 @@
     }
 }
 
+.facebook {
+    right: -20px;
+    bottom: -75%;
+}
+
+.instagram {
+    right: -20px;
+    bottom: -112%;
+}
+
+.instagram__icon,
 .facebook__icon {
     margin-left: 13px;
     color: $black;

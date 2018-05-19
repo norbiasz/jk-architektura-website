@@ -54,11 +54,20 @@
             </div> 
 	    </div>		
     </div><!-- /.container-->
-    <?php  $fb = get_field("fb", "options");
+    <?php  
+        $fb = get_field("fb", "options");
+        $inst = get_field("inst", "options");
         if($fb) :
     ?>
     <a href="<?php echo $fb ?>" target="_blank" class="facebook">
         <span class="icon-facebook facebook__icon"></span>
+    </a>
+    <?php
+        endif;
+        if($inst) :
+    ?>
+    <a href="<?php echo $inst ?>" target="_blank" class="instagram">
+        <span class="icon-instagram2 instagram__icon"></span>
     </a>
     <?php endif; ?>
 </header>
