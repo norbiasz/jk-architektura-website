@@ -1,6 +1,6 @@
 # PSD to WordPresss  #
 
-__Live website [jk-architektura.pl](http://jk-architektura.pl/)__
+__Live website [architektura-jk.pl](http://architektura-jk.pl/)__
 
 I used:
 
